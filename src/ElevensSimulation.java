@@ -7,7 +7,7 @@ public class ElevensSimulation {
 	/**
 	 * The number of games of Elevens to play.
 	 */
-	private static final int GAMES_TO_PLAY = 1;
+	private static final int GAMES_TO_PLAY = 10;
 
 	/**
 	 * Flag used to control debugging print statements.
@@ -27,6 +27,7 @@ public class ElevensSimulation {
 				System.out.println(board);
 			}
 			while (board.playIfPossible()) {
+				board.playIfPossible();
 				if (I_AM_DEBUGGING) {
 					System.out.println(board);
 				}
